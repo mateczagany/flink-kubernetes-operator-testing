@@ -1,0 +1,8 @@
+# Create new Kubernetes cluster in a Docker container or use one already running
+# This is used to speed up test speed, don't use any production Kubernetes cluster
+createKubernetesCluster: false
+
+# If it's null or empty we will create a Kafka container, else use these Kafka properties
+kafkaProperties:
+  security.protocol: SSL
+  bootstrap.servers: 127.0.0.1:443
